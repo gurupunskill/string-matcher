@@ -68,7 +68,7 @@ To simulate mutation, given a `0 < mutation rate < 1`  if a uniformly generated 
 After defining these, genrating a random population, choosing the best indiviuals and breeding them to create the next generation is trivial.
 
 ## Results
-It works. Check the notebook [here]('String Matching'.ipynb)
+It works. Check the notebook [here](String%20Matching.ipynb)
 
 ## Learing outcomes
 1. Neuro evolution has a similar shaped learning curve like any other minimization algorithm. It gets harder as you get closer to a perfect value.
