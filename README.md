@@ -7,20 +7,20 @@ This is more of an exercise on neuroevolutionary concepts than a viable, practic
 ### Environment
 Given a string S of some length with any alphanumeric characters.
 ```
-	*String* = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+	String = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
 ```
 ### Individual
 Any string of any length is an individual in this environment.  
 ```
-	*Individual* = "LAKSKDJLKMCasdkjAKSDjkj"
+	Individual = "LAKSKDJLKMCasdkjAKSDjkj"
 ```
 
 ### Fitness
 The fitness of an individual is proportional to how close it is to the defined string S for this environment.  
 
 ```
-	*Individual* = "ABCDEFGHIJKLMNOPQRSTUVWXYS"  
-	Fitness(*Individual*) = (Number of characters in *Individual* same as *String*)/(Number of characters in *String*)  
+	Individual = "ABCDEFGHIJKLMNOPQRSTUVWXYS"  
+	Fitness(Individual) = (Number of characters in Individual same as String)/(Number of characters in String)  
 						  = 25/26
 						  = 0.962
 ```
