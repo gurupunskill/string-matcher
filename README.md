@@ -21,11 +21,11 @@ The fitness of an individual is proportional to how close it is to the defined s
 ```
 	Individual = "ABCDEFGHIJKLMNOPQRSTUVWXYS"  
 	Fitness(Individual) = (Number of characters in Individual same as String)/(Number of characters in String)  
-						  = 25/26
-						  = 0.962
+						= 25/26
+						= 0.962
 ```
 ```python	
-	def evaluate_fitness(actual, new):
+    def evaluate_fitness(actual, new):
         together = itertools.zip_longest(actual, new, fillvalue=None)
         cost = len([a for a,b in together if a == b])
         cost /= max(len(actual), len(new))
@@ -40,7 +40,7 @@ Given two parents, I've defined breeding to select a character from the two pare
 To simulate mutation, given a `0 < mutation rate < 1`  if a uniformly generated pseudorandom floating point number is greater than this defined `mutation rate`, then an alphanumeric character is randomly chosen to be in that position `i` for the child. I've also used the same `mutation rate` to randomly add or remove an extra character in the child.
 
 ```python
-	def make_child(parent_1, parent_2):
+    def make_child(parent_1, parent_2):
         longer_parent  = list(parent_1 if len(parent_1) > len(parent_2) else parent_2)
         shorter_parent = list(parent_2 if len(parent_1) > len(parent_2) else parent_1)
     
